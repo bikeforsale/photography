@@ -5,15 +5,15 @@ image_thumbs_loc: "/images/thumbs"
 #google_analytics: "UA-46465113-2"
 
 # UI configs
-title: "Photography by Joe Brew"
-subtitle: "family, health, epidemiology, economics, development, travel"
+title: "Photography | Joe Brew"
+subtitle: "family, health, development, travel"
 author: "Joe Brew"
 header:
  title: "Photography"
  subtitle: "by Joe Brew"
 footer:
  name: "Joe Brew"
- bio: "I am a dad."
+ bio: "I am a guy who does things and sometimes takes a camera along."
  github: "Want to know more about me? Click <a href=\"https://joebrew.net\">here</a>."
 social_urls:
   facebook: "https://www.facebook.com/josephbrew"
