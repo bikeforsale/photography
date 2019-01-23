@@ -14,7 +14,7 @@ header:
 footer:
  name: "Joe Brew"
  bio: "I am a guy who does things and sometimes takes a camera along."
- github: "Want to know more about me? Click <a href=\"https://joebrew.net\">here</a>."
+ github: "Want to know more? Click <a href=\"https://joebrew.net\">here</a>."
 social_urls:
   facebook: "https://www.facebook.com/josephbrew"
   twitter: "https://www.twitter.com/joethebrew"
