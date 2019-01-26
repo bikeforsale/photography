@@ -253,7 +253,7 @@
                         $image.trigger('click');
                     });
 
-            // EXIF data					
+            // EXIF data
             EXIF.getData($image_img[0], function () {
                 exifDatas[$image_img.data('name')] = getExifDataMarkup(this);
             });
@@ -267,7 +267,7 @@
                 var $image_img = $a.children('img');
                 var data = exifDatas[$image_img.data('name')];
                 if (data === undefined) {
-                    // EXIF data					
+                    // EXIF data
                     EXIF.getData($image_img[0], function () {
                         data = exifDatas[$image_img.data('name')] = getExifDataMarkup(this);
                     });
@@ -322,6 +322,12 @@
                 if (info === "iso") {
                     template += '<i class="fa fa-info-circle" aria-hidden="true"></i> ' + exif["iso"] + '&nbsp;&nbsp;';
                 }
+                if (info === "focal") {
+                    template += '<i class="fa fa-search" aria-hidden="true"></i> ' + exif["focal"] + '&nbsp;&nbsp;';
+                }
+                if (info === "datetime") {
+                    template += '<i class="fa fa-calendar" aria-hidden="true"></i> ' + exif["datetime"] + '&nbsp;&nbsp;';
+                }
             }
             return template;
         }
@@ -344,6 +350,13 @@
             if (EXIF.getTag(img, "ISOSpeedRatings") !== undefined) {
                 exifData.iso = EXIF.getTag(img, "ISOSpeedRatings");
             }
+            if (EXIF.getTag(img, "FocalLength") !== undefined) {
+                exifData.focal = EXIF.getTag(img, "FocalLength");
+            }
+            if (EXIF.getTag(img, "DateTimeOriginal") !== undefined) {
+                exifData.datetime = EXIF.getTag(img, "DateTimeOriginal");
+            }
+
             return exifData;
         }
 
